@@ -1,0 +1,41 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{indentfirst}
+\usepackage{changepage}
+\usepackage{titlesec}
+\usepackage[
+  left=3cm, right=2cm, top=2cm, bottom=2cm
+]{geometry}
+
+\pagestyle{plain}
+
+\titleformat{\chapter}
+  {\centering\normalsize\bfseries}
+  {}
+  {}
+  {\MakeUppercase}
+  []   
+  
+\titlespacing{\chapter}{0pt}{0cm}{2em}
+
+\begin{document}
+
+\title{\Huge\bfseries\MakeUppercase{Избранные произведения}}
+\author{\LARGE\bfseries\MakeUppercase{Даниил Хармс}}
+\date{}
+\maketitle
+
+\chapter*{Считалка}
+\input{stories/schitalka.tex}
+
+\vspace{0.3cm}
+\begin{center}
+* * *
+\end{center}
+
+\chapter*{Воспоминания одного \protect \\ мудрого старика}
+\input{stories/vospominaniya.tex}
+
+\end{document}
